@@ -1,5 +1,5 @@
 import unittest
-from helper import check_only_alpha
+from main import check_only_alpha
 
 
 class MainTest(unittest.TestCase):
