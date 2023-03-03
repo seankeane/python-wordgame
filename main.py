@@ -108,12 +108,3 @@ if __name__ == "__main__":
                 ask_for_guess()
         else:
             ask_for_guess()
-
-        # yes => is it right
-            # yes => return congrats
-            # no => return key & guess again
-        # no => guess again
-
-        # TODO
-        # TODO length and alpha check doesn't happy for guesses after you attempt an invalid word
-        # TODO print(letters)
