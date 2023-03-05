@@ -51,7 +51,7 @@ def check_is_valid_guess(g):
     elif not check_only_alpha(g):
         print("Your guess should only contain letters.")
         return False
-    elif g not in wordlist:
+    elif g.lower() not in wordlist:
         print("That is not a valid word.")
         return False
     else:
@@ -61,9 +61,9 @@ def check_is_valid_guess(g):
 def print_key(g):
     res = ""
     for index, val in enumerate(g):
-        if val == answer[index]:
+        if val.lower() == answer[index]:
             res += "+"
-        elif val in answer:
+        elif val.lower() in answer:
             res += "-"
         else:
             res += "x"
@@ -73,7 +73,7 @@ def print_key(g):
 def print_letters(g):
     global letters
     for letter in g:
-        letters = letters.replace(letter, "-")
+        letters = letters.replace(letter.lower(), "-")
     print(f"Letters you haven't guessed: {letters}")
 
 
