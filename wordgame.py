@@ -101,8 +101,8 @@ if __name__ == "__main__":
                     is_solved = True
                     print_congrats()
                 else:
-                    print_letters(guess)
                     print_key(guess)
+                    print_letters(guess)
                     ask_for_guess()
             else:
                 ask_for_guess()
