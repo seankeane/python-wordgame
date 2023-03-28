@@ -12,7 +12,7 @@ Run as follows:
 python3 wordgame.py
 ```
 
-The follow instructions will show in terminal:
+The following instructions will show in terminal:
 
 <img src="screenshots/instructions.png" alt="instructions" width="100%"/> 
 
